@@ -1,0 +1,94 @@
+.card-container{
+  align-items: center;
+  background-color: lighten(color("lightgray"), 2.5%);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  min-height: 632px;
+  width: 100%;
+  
+  @media (min-width: 375px) {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+
+  .card{
+    background-color:white;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(color("grayishblue"), .2);
+    margin: 1rem;
+    min-height: 560px;
+    text-align: center;
+    width: 320px;
+    
+    @media (min-width: 375px) {
+      width: 340px;
+    }
+    
+    &__header{
+      img{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        width: 100%;
+      }
+    }
+
+    &__body{
+      margin-top: 1.8rem;
+      text-align: center;
+
+      &-title{
+        padding: 0 2.4rem;
+        h1{
+          font-size: 1.6rem;
+          letter-spacing: .5px;
+          padding-bottom: 1rem;
+        }
+        
+        p{
+          font-size: 1.1rem;
+          line-height: 1.4;
+        }
+      }
+
+      &-description{
+        align-items: center;
+        background-color: lighten(color("lightgray"), 9%);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 1.6rem;
+        padding: .8rem;
+
+        h4{
+          padding-bottom: 0.4rem;
+        }
+
+        a{
+          font-size: .9rem;
+        }
+      }
+    }
+
+    &__footer{
+      display: grid;
+      grid-gap: .1rem;
+      grid-template-columns: 1fr;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .card__link{
+      color: color("grayishblue");
+      font-size: .8rem;
+      position: relative;
+      top: 2rem;
+      a{
+        font-size: .7rem;
+      }
+    }
+  }
+}

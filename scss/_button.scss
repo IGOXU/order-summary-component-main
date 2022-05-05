@@ -1,0 +1,26 @@
+.button{
+  @include no-appearence;
+  
+  border-radius: .6rem;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  
+  &-primary{
+    background-color: color("primary");
+    color: color("white");
+
+    &:hover{
+      background-color: color("secondary");
+    }
+  }
+  
+  &-secondary{
+    color: color("grayishblue");
+    
+    &:hover{
+      color: color("secondary");
+    }
+  }
+}

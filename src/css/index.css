@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h4 {
+  color: hsl(218deg, 44%, 22%);
+  text-transform: capitalize;
+}
+
+p {
+  color: hsl(220deg, 15%, 55%);
+}
+p::first-letter {
+  text-transform: capitalize;
+}
+
+.card-container {
+  align-items: center;
+  background-color: #e0e9f3;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  min-height: 632px;
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .card-container {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+.card-container .card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(123, 135, 157, 0.2);
+  margin: 1rem;
+  min-height: 560px;
+  text-align: center;
+  width: 320px;
+}
+@media (min-width: 375px) {
+  .card-container .card {
+    width: 340px;
+  }
+}
+.card-container .card__header img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+.card-container .card__body {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+.card-container .card__body-title {
+  padding: 0 2.4rem;
+}
+.card-container .card__body-title h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 1rem;
+}
+.card-container .card__body-title p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.card-container .card__body-description {
+  align-items: center;
+  background-color: #f8fafc;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1.6rem;
+  padding: 0.8rem;
+}
+.card-container .card__body-description h4 {
+  padding-bottom: 0.4rem;
+}
+.card-container .card__body-description a {
+  font-size: 0.9rem;
+}
+.card-container .card__footer {
+  display: grid;
+  grid-gap: 0.1rem;
+  grid-template-columns: 1fr;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.card-container .card .card__link {
+  color: hsl(220deg, 15%, 55%);
+  font-size: 0.8rem;
+  position: relative;
+  top: 2rem;
+}
+.card-container .card .card__link a {
+  font-size: 0.7rem;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+}
+.button-primary {
+  background-color: hsl(242deg, 66%, 48%);
+  color: hsl(0deg, 0%, 100%);
+}
+.button-primary:hover {
+  background-color: hsl(245deg, 83%, 68%);
+}
+.button-secondary {
+  color: hsl(220deg, 15%, 55%);
+}
+.button-secondary:hover {
+  color: hsl(245deg, 83%, 68%);
+}/*# sourceMappingURL=index.css.map */
