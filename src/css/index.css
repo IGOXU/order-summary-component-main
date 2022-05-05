@@ -11,7 +11,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h4 {
+h1, h2 {
   color: hsl(218deg, 44%, 22%);
   text-transform: capitalize;
 }
@@ -84,7 +84,7 @@ p::first-letter {
   margin: 2rem 1.6rem;
   padding: 0.8rem;
 }
-.card-container .card__body-description h4 {
+.card-container .card__body-description h2 {
   padding-bottom: 0.4rem;
 }
 .card-container .card__body-description a {
